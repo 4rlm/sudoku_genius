@@ -14,11 +14,10 @@ task :test => :spec
 task :console do
   require 'irb'
   require 'irb/completion'
-  require 'link_scraper'
+  require 'sudoku_genius'
   require "active_support/all"
   ARGV.clear
 
-  # binding.pry
   scraped_links = run_sudoku
   # binding.pry
 
@@ -27,7 +26,10 @@ end
 
 
 def run_sudoku
-  # binding.pry
+  binding.pry
+  solve = SudokuGenius::Solver.new
+  res = solve.start
+  binding.pry
 
   # scraper = LinkScraper::Scrape.new({text_criteria: text_criteria, path_criteria: path_criteria})
   # scraped_links = scraper.start('https://en.wikipedia.org/wiki/Austin%2C_Texas')

@@ -1,6 +1,6 @@
 require "sudoku_genius/version"
 
-require "link_scraper/solver"
+require "sudoku_genius/solver"
 # require 'mechanizer'
 # require 'scrub_db'
 require 'pry'

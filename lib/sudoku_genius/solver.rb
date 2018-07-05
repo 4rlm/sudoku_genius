@@ -3,7 +3,12 @@ module SudokuGenius
   class Solver
 
     def initialize
-      #code
+      binding.pry
+    end
+
+    def start
+      binding.pry
+      "testing setup"
     end
 
 
