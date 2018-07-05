@@ -1,0 +1,16 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/pkg/
+/spec/reports/
+/tmp/
+
+sudoku_genius-*.gem
+.DS_Store
+.idea/
+.xlsx
+.txt
+.gemspec
+!seed.csv
