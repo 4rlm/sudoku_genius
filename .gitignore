@@ -14,3 +14,4 @@ sudoku_genius-*.gem
 .txt
 .gemspec
 !seed.csv
+!sudoku_puzzles.txt
