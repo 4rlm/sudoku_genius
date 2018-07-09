@@ -6,5 +6,9 @@ require "sudoku_genius/solver"
 require 'pry'
 
 module SudokuGenius
-  # Your code goes here...
+
+  def self.play(args={})
+    results = self::Solver.new.play(args)
+  end
+
 end
