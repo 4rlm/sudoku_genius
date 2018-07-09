@@ -1,9 +1,9 @@
-# rspec spec/sudoko_genius/solver_spec.rb
+# rspec spec/sudoku_genius/solver_spec.rb
 
 require 'spec_helper'
 
 describe 'Solver' do
-  let(:solver_obj) { SudokoGenius::Solver.new }
+  let(:solver_obj) { SudokuGenius::Solver.new }
   # before { solver_obj.inst = inst }
 
   describe '#meth_name' do

@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "sudoko_genius"
+require "sudoku_genius"
 require "active_support/all"
 # require 'utf8_sanitizer'
 # require 'pry'
