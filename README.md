@@ -1,5 +1,6 @@
 # SudokuGenius
 
+[![Build Status](https://travis-ci.org/4rlm/sudoku_genius.svg?branch=master)](https://travis-ci.org/4rlm/sudoku_genius)
 [![Gem Version](https://badge.fury.io/rb/sudoku_genius.svg)](https://badge.fury.io/rb/sudoku_genius)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
