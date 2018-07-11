@@ -63,7 +63,7 @@ module SudokuGenius
       data_hashes = find_dash_options(make_data_hash(rows))
       updated_rows = fill_dashes(data_hashes, rows)
       @final_board = updated_rows if !@final_board.any?
-      looper(puzzle_string, updated_rows)
+      res = looper(puzzle_string, updated_rows)
     end
 
     def get_dash_count_totals(rows)
@@ -78,7 +78,7 @@ module SudokuGenius
       ending_dash_count = get_dash_count_totals(updated_rows)
       return solved?(updated_rows) if ending_dash_count == 0
 
-      (ending_dash_count != starting_dash_count) ? looper(puzzle_string, updated_rows) : looper(puzzle_string, format_puzzle_string(puzzle_string))
+      (ending_dash_count != starting_dash_count) ? looper(puzzle_string, updated_rows) : looper(puzzle_string, res = format_puzzle_string(puzzle_string))
     end
 
     def find_column(rows)
